@@ -35,4 +35,3 @@ export interface PaginatedApiResponse extends PaginatedData {
     results: Character[]
 }
 
-//TODO: remove extra fields from parsed apis

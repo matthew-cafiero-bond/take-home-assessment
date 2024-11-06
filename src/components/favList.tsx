@@ -7,12 +7,12 @@ interface FavListProps { }
 
 const FavList: React.FC<FavListProps> = () => {
 
+    const { favorites } = useContext(FavContext);
+    const [currentPage, setCurrentPage] = useState<number>(1);
+
     const calcMaxPage = () => {
         return favorites.length ? Math.ceil(favorites.length / itemsPerPage) : 1;
     };
-
-    const { favorites } = useContext(FavContext);
-    const [currentPage, setCurrentPage] = useState<number>(1);
 
     const itemsPerPage = 3;
     const maxPage = favorites.length ? Math.ceil(favorites.length / itemsPerPage) : 1;

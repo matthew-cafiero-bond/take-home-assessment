@@ -13,6 +13,14 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ character, handleModalClose }) => {
     const [homeworld, setHomeworld] = useState<Homeworld|undefined>(character?.homeworldObj ?? undefined);
 
+    const preventOverlayClick = (e:any) => {
+        e.stopPropagation();
+    }
+
+    const handleOverlayClick = () => {
+        handleModalClose();
+    }
+
     useEffect(() => {
         const getHomeworld = async () => {
             const homeworldId = getIdFromSWAPIUrl(character.homeworld);
@@ -25,14 +33,6 @@ const Modal: React.FC<ModalProps> = ({ character, handleModalClose }) => {
             getHomeworld();
         }
     }, []);
-
-    const preventOverlayClick = (e:any) => {
-        e.stopPropagation();
-    }
-
-    const handleOverlayClick = () => {
-        handleModalClose();
-    }
 
     return(
         <div>

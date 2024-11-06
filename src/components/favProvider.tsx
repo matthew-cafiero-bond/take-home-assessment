@@ -10,7 +10,6 @@ interface FavProviderProps {
     children: React.ReactNode
 }
 
-//TODO: is there more typing to do there
 export const FavContext = createContext<FavContextType>({ favorites: [], setFavorites: () => {} });
 
 const FavProvider: React.FC<FavProviderProps> = ({ children }) => {

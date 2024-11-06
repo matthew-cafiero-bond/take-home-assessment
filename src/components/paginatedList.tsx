@@ -20,7 +20,6 @@ const PaginatedList: React.FC<PaginatedListProps> = ({ currentPage, setCurrentPa
         setCurrentPage(currentPage - 1);
     }
 
-    //TODO: figure out why this css set up works, because I don't like it
     return(
         <div className='paginatedList-container'>
             <div className="paginatedList">

@@ -5,7 +5,7 @@ import { getCharacters } from '../services/api';
 import { getIdFromSWAPIUrl } from '../utils/utils';
 
 interface SearchListProps { }
-//TODO: clean up mainlist and favlist
+
 const SearchList: React.FC<SearchListProps> = () => {
     
     const [currentPage, setCurrentPage] = useState<number>(1);

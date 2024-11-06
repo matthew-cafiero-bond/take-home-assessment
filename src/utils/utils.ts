@@ -36,4 +36,3 @@ export const getIdFromSWAPIUrl = (url: string): number => {
     return parseInt(split[5]);
 }
 
-//TODO: is there anywhere i could use useRef instead of useState?
