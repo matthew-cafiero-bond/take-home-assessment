@@ -1,0 +1,208 @@
+.app {
+    height: 100vh;
+    width: 100vw;
+    max-height: fit-content;
+}
+
+.app-header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.favList {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    min-width:min-content;
+}
+
+.searchList {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.listHeader {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.searchList-searchLabel{
+    display: flex;
+    gap: 10px;
+}
+
+.searchList-search {
+    border-radius: 0%;
+    border: 0;
+    background-color: gainsboro;
+}
+
+.paginatedList-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.paginatedList {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.paginatedList-List {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    gap: 16px;
+}
+
+.favList > .paginatedList-container > .paginatedList > .paginatedList-List {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.paginatedList-pageChangeFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 20px;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+    height: 10%;
+}
+
+.paginatedList-pageChanger {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.paginatedList-pageChangeButton {
+    border-radius: 0%;
+    border: 0;
+    background-color: transparent;
+}
+
+.paginatedList-pageChangeButton:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 140px;
+    height: 180px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-mainButton {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    border-radius: 0%;
+    border: 0;
+    padding: 0;
+}
+
+.card-mainButton:hover{
+    background-color: gainsboro;
+}
+
+.card-favButton{
+    height: 15%;
+    border-radius: 0%;
+    border: 0;
+    background-color: gainsboro;
+}
+
+.card-favButton:hover {
+    background-color: lightgrey;
+}
+
+.card-image {
+    width: 100%;
+    height: 70%;
+}
+
+.modal-overlay {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 35%;
+    padding: 30px;
+    padding-top: 10px;
+    background-color: orange;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-characterInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-homeworldInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-footer {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-closeButton {
+    border-radius: 0%;
+    border: 0;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.modal-closeButton:hover {
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-value {
+    text-align: right;
+}
+
